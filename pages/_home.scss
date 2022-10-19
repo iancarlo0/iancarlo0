@@ -2,7 +2,7 @@
 .cabecera {
 
     width: 100%;
-    height: 3rem;
+    height: 5rem;
     background-image: linear-gradient(to  left top, #e7cccc , $colorPrincipal);
 
     ul{
@@ -10,7 +10,9 @@
         position:absolute;
         left: 50%;
         transform: translate(-50%); /* relative to itself */
-        height: 3rem;
+        height: 5rem;
+        display: flex;
+
 
     }
 
@@ -19,7 +21,8 @@
         font-family: $fuentePrincipal;
         list-style: none;
         float: left;
-        height: 3rem;
+        height: 5rem;
+
 
     }
 
@@ -28,16 +31,15 @@
         text-align: center;
         display: block;
         font-family: $fuentePrincipal;
-        color: white;
         text-decoration: none;
     }
 
-    .logo a{
+    .logo{
         background-color: $colorSecundario;
-        color: black;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 2rem 1.5rem;
+
     }
 
-    li a:hover {
-        background-color: black;
-    }
 }

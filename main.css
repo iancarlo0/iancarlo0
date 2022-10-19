@@ -47,19 +47,23 @@ li a:hover:after {
 }
 
 * {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
+
+}
+
+.menu_items{
+  width: 100%;
+  height: 5rem;
+  background-image: linear-gradient(to left top, #e7cccc, #EFB6B6);
+  text-align: center;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-
-.cabecera {
-  width: 100%;
-  height: 5rem;
-  background-image: linear-gradient(to left top, #e7cccc, #EFB6B6);
-}
-.cabecera ul {
+.menu_items ul {
   overflow: hidden;
   position: absolute;
   left: 50%;
@@ -67,23 +71,19 @@ li a:hover:after {
   height: 5rem;
   display: flex;
 }
-.cabecera li {
-  font-family: "Lato";
+.menu_items li {
   list-style: none;
   float: left;
   height: 5rem;
 }
-.cabecera li a {
+.menu_items li a {
   padding: 1rem 1.5rem;
-  text-align: center;
   display: block;
-  font-family: "Lato";
   text-decoration: none;
 }
-.cabecera .logo {
+.menu_items .logo {
   background-color: #FDF1B4;
   color: rgb(0, 0, 0);
-  text-align: center;
   padding: 2rem 1.5rem;
 }
 

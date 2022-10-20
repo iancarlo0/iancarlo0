@@ -14,8 +14,8 @@ li a:before {
   left: 0;
   width: 100%;
   height: 100%;
-  border-top: 2px solid #FDF1B4;
-  border-bottom: 2px solid #FDF1B4;
+  border-top: 2px solid #095a31;
+  border-bottom: 2px solid #2b717a;
   border-radius: 5px;
   transform: scaleY(2);
   opacity: 0;
@@ -64,12 +64,11 @@ li a:hover:after {
   height: 5rem;
   font-size: 24px !important;
   text-align: center;
-  font-weight: 600;
+  font-weight: 550;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  margin-bottom: 10rem;
-
+  margin-bottom: 10rem; 
 }
 
 .menu_items ul {
@@ -94,7 +93,7 @@ li a:hover:after {
   font-size: 32px;
   display: block;
   text-decoration: none;
-  background-image: linear-gradient(to right, #feffbb, #c5f8e7);
+  background-image: linear-gradient(to right, #2b717a, #095a31);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -105,13 +104,14 @@ li a:hover:after {
 }
 
 .header_info {
-  height: 100vh;
+  height: 95vh;
   background-image: url("img/img1.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  opacity: 0.7;
+  opacity: 0.75; /* para que la imagen se ve mas guay */
+  
 }
 
 

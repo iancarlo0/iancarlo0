@@ -1,0 +1,20 @@
+.header {
+    position: relative;
+    height: 95vh; // 95% viewport height 
+    width: 100%;
+    background-image: url('/cocoktail/img/img1.jpg');
+    background-size: cover;
+    background-position: top; // ensure image always stays at the top of the page 
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    opacity: 0.7;
+
+    &__text-box {
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); //para centrar el texto en medio del div
+        text-align: center;
+        color: transparent;
+    }
+
+}

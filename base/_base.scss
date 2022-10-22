@@ -1,8 +1,30 @@
-
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; // Force inheritance. Better practice
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    box-sizing: inherit; // Force inheritance. Better practice
+}
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    @include respond(tab-land) {
+        font-size: 56.25%; //  1 rem = 9px, 9/16= 56.25%
+    }
+    
+    @include respond(tab-port) {
+        font-size: 50%; //  1 rem = 8px, 8/16= 50%
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; //  1 rem = 12px, 12/16= 75%
+    } 
+}
+body {
+    box-sizing: border-box; // Not inherited
+    padding: 0;
+    overflow-x: hidden;
+    @include respond(tab-port) {
+        padding: 0;
+        overflow-x: hidden; //no horizontal scrollbar
+    }
 }

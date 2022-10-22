@@ -7,7 +7,9 @@ li{
         padding: 10px 20px;
         transition: .5s;
         z-index: 1;
-        color: aliceblue;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark); // background-color can not use gradients
+        -webkit-background-clip: text; // clip background to the text
+       color: transparent; // hide the text to show the backgroup clipped
         &:before {
           content: '';
           position: absolute;
@@ -15,8 +17,8 @@ li{
           left: 0;
           width: 100%;
           height: 100%;
-          border-top: 2px solid $colorSecundario;
-          border-bottom: 2px solid $colorSecundario;
+          border-top: 2px solid $color-primary-light;
+          border-bottom: 2px solid $color-primary-light;
           border-radius: 5px;
           transform: scaleY(2);
           opacity: 0;
@@ -29,7 +31,7 @@ li{
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: $colorSecundario;
+          background-color: transparent;
           transform: scale(0);
           opacity: 0;
           transition: .8s;
@@ -38,7 +40,6 @@ li{
 
         }
         &:hover {
-          color: rgb(0, 0, 0);
           &:before {
             transform: scaleY(1);
             opacity: 1;
